@@ -2,7 +2,7 @@ import org.code.neighborhood.*;
 
 public class FlagPainter extends MuralPainter {
 
-
+//subclass of FlagPainter.java
 public void drawBody(){
   FlagLside();
   FlagBottom();
@@ -11,7 +11,7 @@ public void drawBody(){
   Symbol();
   
 }
-
+// paints left side of flag
 public void FlagLside(){
   turnRight();
   paintLine("white", 14);
@@ -21,25 +21,26 @@ public void FlagLside(){
 
   
 }
-
+//paints right side of flag
 public void FlagRside(){
    turnLeft();
   paintLine("white", 14);
 }
   
-
+//paints top of flag
 public void FlagTop(){
   turnLeft();
   
   paintLine("white", 14);
   
 }
-
+//paints bottom of flag
 public void FlagBottom(){
 turnLeft();
   paintLine("white", 13);
   
    }
+  //creates the Symbol of figure
   public void Symbol(){
     turnRight();
     turnRight();
